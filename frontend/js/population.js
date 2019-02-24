@@ -1,5 +1,5 @@
 var popMax = 3;
-var popNow = 0;
+var popNow = 3;
 
 PopulationUpdate();
 
