@@ -1,13 +1,22 @@
+body{
+  font-weight: 400;
+}
+
 nav{
   text-align: center;
   background-color:
 }
 
-.title{
-  text-align: center;
+.logo{
+  max-width: 2em;
 }
 
-.title, #statbox{
+.title{
+  text-align: center;
+  font-weight: 300;
+}
+
+.title, #popbox, #thermobox{
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -16,18 +25,18 @@ nav{
   user-select: none;
 }
 
-#statbox{
+#popbox, #thermobox{
   text-align: center;
   display: grid;
   max-width: 20em;
 }
 
-#statimg{
+#popimg, #thermoimg{
   grid-column: 1;
   grid-row: 1;
 }
 
-#stathead{
+#pophead, #thermohead{
   grid-column: 1;
   grid-row: 1;
 
@@ -36,7 +45,7 @@ nav{
   color: #00bcff;
 }
 
-#statbox p{
+#popbox p, #thermobox p{
   grid-column: 1;
   grid-row: 1;
 

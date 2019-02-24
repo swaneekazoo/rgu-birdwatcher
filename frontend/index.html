@@ -6,23 +6,22 @@
 		<meta name="author" content="Adam Weir">
 		<meta name="description" content="Birdwatcher provides absolute peace of mind and body.">
 		<title>Birdwatcher</title>
-		<link rel="icon" href="https://milligram.github.io/images/icon.png">
+		<link rel="icon" href="img/icon.png">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300italic,400,900">
 		<link rel="stylesheet" href="css/milligram/normalize.css">
 		<link rel="stylesheet" href="css/milligram/milligram.min.css">
 		<link rel="stylesheet" href="https://milligram.github.io/styles/main.css">
-		<script src="js/status.js"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	</head>
 	<body>
 
 		<main class="wrapper">
 
+			<!-- Navigation -->
+
 			<nav class="navigation">
 				<section class="container">
-					<img src="#">
-					<h1 class="title">Birdwatcher</h1>
+					<h1 class="title">🐔 Birdwatcher</h1>
 				</section>
 			</nav>
 
@@ -30,31 +29,34 @@
 
 				<div class="row">
 
-					<!-- Status display panel -->
+					<!--Status display panel (left)-->
 
 					<div class="column">
 						<section id="status">
 							<h2 class="title">Status</h2>
 
+							<!-- Population -->
+
 							<h5 class="title">Population</h5>
-							<div class="container" id="statbox">
-								<h1 id="stathead">/</h1>
-								<img src="img/good.png" id="statimg">
-								<p id="statdesc">g</p>
+							<div class="container" id="popbox">
+								<h1 id="pophead">/</h1>
+								<img src="img/population/good.png" id="popimg">
+								<p id="popdesc"></p>
 							</div>
+
+							<!-- Temperature -->
 
 							<h5 class="title">Temperature</h5>
-							<div class="container" id="statbox">
-								<h1 id="stathead">/</h1>
-								<img src="img/good.png" id="statimg">
-								<p id="statdesc">g</p>
+							<div class="container" id="thermobox">
+								<h1 id="thermohead">0</h1>
+								<img src="img/temperature/good.png" id="thermoimg">
+								<p id="thermodesc"></p>
 							</div>
-
 
 						</section>
 					</div>
 
-					<!-- Live feed panel-->
+					<!--Live feed panel (right)-->
 
 					<div class="column">
 						<section id="feed">
@@ -79,7 +81,12 @@
 
 		</main>
 
-		<!-- <script src="https://milligram.github.io/scripts/main.js"></script> -->
-
 	</body>
+
+	<!-- Update page content -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/population.js"></script>
+	<script src="js/temperature.js"></script>
+
 </html>
