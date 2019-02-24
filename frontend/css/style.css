@@ -7,10 +7,6 @@ nav{
   background-color:
 }
 
-.logo{
-  max-width: 2em;
-}
-
 .title{
   text-align: center;
   font-weight: 300;
@@ -29,6 +25,7 @@ nav{
   text-align: center;
   display: grid;
   max-width: 20em;
+  padding-bottom: 3em;
 }
 
 #popimg, #thermoimg{
