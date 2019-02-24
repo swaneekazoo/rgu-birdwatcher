@@ -40,7 +40,7 @@ function Update() {
 
     statbool = 'good';
     colour = '#00bcff';
-    description = 'Everything is fine.';
+    description = 'All correct and present.';
 
   }
 
